@@ -1,0 +1,7 @@
+services:
+  portal:
+    image: "${IMAGEM_PORTAL:?Defina a imagem a publicar}"
+    pull_policy: never
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:8088:80"
